@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/dashboard.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ted's Delivery Service</title>
+</head>
+<body onload="{displayAccInfo()}">
+    <div class="flex-vert-center">
+        <img id="img_acc" src="" />
+        <h1 id="h1_name"></h1>
+    </div>
+    <fieldset class="flex-vert-center">
+        <legend>Order Management</legend>
+
+        <a id="a_accept_order" href="/dashboardaccept_order">Accept an Order</a>
+        <a id="a_read_order" href="/dashboardread_order">View Your Order(s)</a>
+        <a id="a_update_order" href="/dashboardupdate_order">Update Status of Your Order(s)</a>
+    </fieldset>
+
+    <fieldset class="flex-vert-center">
+        <legend>Driver Management</legend>
+        
+        <button id="button_logout" type="button" onclick="{logout()}">Logout</button>
+        <a id="a_read_driv" href="/dashboardread_driv">View Driver Info</a>
+        <a id="a_update_driv" href="/dashboardupdate_driv">Update Driver Info</a>
+        <button id="button_delete" type="button" onclick="{deleteAccount()}">Delete this Account</button>
+    </fieldset>
+</body>
+</html>

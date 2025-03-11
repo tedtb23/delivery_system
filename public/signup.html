@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="accounts.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ted's Delivery Service</title>
+</head>
+<body onload="{displaySignupInfo()}">
+    <fieldset class="flex-vert-center">
+        <legend>Sign Up</legend>
+        <form id="form_signup" class="flex-vert-center" onsubmit="{handleSignup(event)}">
+            <label for="select_acc_type">Select your account type: </label>
+            <select id="select_acc_type" onchange="{displaySignupInfo()}">
+                <option value="bus" selected="selected">Business Account</option>
+                <option value="driv">Delivery Driver Account</option>
+            </select>
+        </form>
+    </fieldset>
+</body>
+</html>

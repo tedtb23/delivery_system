@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/dashboard.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ted's Delivery Service</title>
+</head>
+<body>
+    <fieldset class="flex-vert-center">
+        <legend>Add Items to Business Inventory</legend>
+
+        <form id="form_bus_items" class="flex-vert-center" onsubmit="{addBusItems(event)}">
+            <div id="div_bus_items">
+                <label for="input_item_name">Item Name: </label>
+                <input id="input_item_name" name="input_item_name"/>
+
+                <label for="input_item_price">Item Price: </label>
+                <input id="input_item_price" name="input_item_price" type="number" min="0" max="10000" step="0.01"/>
+            </div>
+
+            <button type="button" onclick="{addInput()}">Add Another Item</button>
+            <button type="submit">Return</button>
+        </form>
+    </fieldset>
+</body>
+</html>

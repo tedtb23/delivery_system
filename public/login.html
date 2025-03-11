@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="accounts.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ted's Delivery Service</title>
+</head>
+<body>
+    <div class="flex-vert-center">
+        <h1>Ted's Delivery Service</h1>
+        <img id="img_home" src="./images/home.jpg" width="300" height="200"/>
+    </div>
+    <fieldset class="flex-vert-center">
+        <legend>Login</legend>
+        <form class="flex-vert-center" onsubmit="{handleLogin(event)}">
+            <label for="select_acc_type">Select your account type: </label>
+            <select id="select_acc_type">
+                <option value="bus">Business Account</option>
+                <option value="driv">Delivery Driver Account</option>
+                <option value="admin">Admin Account</option>
+            </select>
+
+            <label for="input_username">Username (email): </label>
+            <input id="input_username" type="email" required/>
+
+            <label for="input_password">Password: </label>
+            <input id="input_password" type="password" required/>
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="flex-vert-center">
+            <h3>Don't have an account?</h3>
+            <a href="./signup.html">Create an account</a>
+        </div>
+    </fieldset>
+    
+</body>
+</html>
